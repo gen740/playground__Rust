@@ -1,3 +1,6 @@
+use std::collections::HashMap;
+mod test;
+
 #[derive(Debug)]
 struct Rectangle {
     width: u32,
@@ -33,4 +36,9 @@ pub fn main() {
         "The area of the rectangle is {} square pixels.",
         rect1.area()
     );
+
+    let mut map = HashMap::new();
+    map.insert(1, 2);
+    println!("{:?}", map);
+    test::test();
 }
